@@ -1,4 +1,5 @@
 // Options editor: https://codepen.io/Alca/pen/MWYwxoN
+import './index.scss'
 
 const SPRITE_SIZE = 32;
 
