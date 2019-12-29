@@ -1,0 +1,17 @@
+.snowfall {
+	top: auto;
+	left: auto;
+	right: 10px;
+	bottom: 10px;
+	color: hsl(0, 0%, 100%);
+	opacity: 0.2;
+    font-family: monospace;
+    background-color: red;
+	
+	a {
+		color: hsl(190, 60%, 70%);
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}
