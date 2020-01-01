@@ -39,9 +39,9 @@ div.main
 @keyframes bubble-move {}
 ```
 结合两部分的源码，在此案例中使用到的相关技术有：
-1. pug模版`(相关文档：https://pugjs.org/zh-cn/api/getting-started.html)`
+1. pug模版 (相关文档：https://pugjs.org/zh-cn/api/getting-started.html)
 2. CSS `animation`
-3. SVG filter  
+3. SVG `filter`
 
 同时也可以看出作者的设计思路：
 1. 确定单形`div.bubble`，设置`border-radius:100%;`，将单形变为圆形
@@ -95,7 +95,7 @@ SVG滤镜的核心就在于filter元素指定的操作，就CASE中用到的操�
 1. 首先滤镜接收到`单形`后，使用`feGaussianBlur`为其生成了模糊效果。`stdDeviation`指定模糊程度，值越大模糊就越强，输入两个值，可以在x，y轴方向上分别指定模糊程度。
 2. `feColorMatrix`可以允许修改任意像素点的颜色及阿尔法值，当type设置为`matrix`时，values 为20个数字信息，以CASE中信息为例，所表达含义如下：  
     R  | G | B | A | CONST
-    ---|---|---|---|-
+    ---|---|---|---|------
     1  | 0 | 0 | 0 | 0
     0  | 1 | 0 | 0 | 0
     0  | 0 | 1 | 0 | 0
