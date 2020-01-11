@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Leed Practice</title>
+    <script type="text/javascript">
+        function initFrame(){
+            let document = window.frames['goeyfooter'].document;
+            let html = document.getElementsByTagName('html')[0];
+            html.style.transform = 'scale(0.57)';
+            html.style['transform-origin'] = 0;
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="card">
+            <div class="wrap">
+                <iframe onload="initFrame()" scrolling="no" name='goeyfooter' frameborder="no" src="module/goeyfooter.html"></iframe>
+            </div>
+            <a href="module/goeyfooter.html">Goey-Footer</a>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

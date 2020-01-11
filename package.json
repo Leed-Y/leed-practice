@@ -33,7 +33,6 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
-    "pug-html-loader": "^1.1.5",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
@@ -42,6 +41,7 @@
   },
   "dependencies": {
     "node-sass": "^4.13.0",
+    "pug-loader": "^2.4.0",
     "simplex-noise": "^2.4.0"
   }
 }
